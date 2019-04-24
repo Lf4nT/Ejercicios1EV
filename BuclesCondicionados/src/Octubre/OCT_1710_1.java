@@ -5,8 +5,7 @@ import java.util.Scanner;
 /*Cruz Asteriscos*/
 
 public class OCT_1710_1 {
-	@SuppressWarnings("resource")
-	static int obtenerFC(String fc) {		
+	static int obtenerFC(String fc) {
 		Scanner ky = new Scanner(System.in);
 		int x;
 		do {
@@ -17,6 +16,7 @@ public class OCT_1710_1 {
 		} while (x < 3 || x % 2 == 0);
 		return x;
 	}
+
 	public static void main(String[] args) {
 		int n = obtenerFC("filas");
 		int m = obtenerFC("columnas");
